@@ -1,0 +1,20 @@
+If last index !=9 => Increment & return array
+"1. Set current index value to 0
+2. Increase the length of the array by 1 => digits = new int[digits.length+1] => [0,0]
+3. Set first index value to 1"
+
+
+"for(int i=digits.length-1;i>=0;i++) {
+if(digits[i]!=9) {
+digits[i] = digits[i]++;
+return digits;
+}
+
+digits[i]=0;
+
+
+}
+
+digits = digits[digits.length+1]
+digits[0]=1;
+return digits;"
