@@ -2,17 +2,9 @@ package Day3;
 
 import org.junit.Test;
 
-public class Diamond {
-// Print diamond	
-//	    *
-//	   ***
-//	  *****
-//	 *******
-//	*********
-//	 *******
-//	  *****
-//	   ***
-//	    *
+public class RightPascalTriangle
+ {
+
 	@Test
 	public void example1() {
 		int n = 5;
