@@ -26,7 +26,8 @@ public class PlusOne {
 	@Test
 	public void example1() {
 		int [] nums = {9};
-		plusOne(nums);
+		
+		System.out.println(Arrays.toString(plusOne(nums)));
 		
 		
 	}
@@ -34,16 +35,21 @@ public class PlusOne {
 	
 	
 	private int[] plusOne(int[] nums) {
-		
-		for (int i = nums.length-1; i >0; i--) {
-			if(nums[i]!=9) {
-				nums[i]++;
-				return nums;
-			}
-		}
-		int[] nums1 = new int [nums.length+1];
-		nums1[0] = 1;
-		return nums1;
+	    for (int i = nums.length - 1; i >= 0; i--) {
+	        if (nums[i] != 9) {
+	            nums[i]++;
+	            return nums;
+	                              
+	            
+	        }
+	        nums[i] = 0;
+	    }
+	    System.out.println(nums);
+	     nums = new int[nums.length + 1];
+	     System.out.println(nums);
+	    nums[0] = 1;
+	    return nums;
 	}
+
 
 }
