@@ -21,7 +21,14 @@ public class Diamond {
 	}
 	/*
 	 * Pseudocode:
-	 * 
+	 * loop for the upper half of the diamond
+	 * loop for printing spaces before each line
+	 * loop for printing stars for each line
+	 * print a newline character after each line
+	 * loop for the lower half of the diamond
+	 * loop for printing spaces before each line
+	 * loop for printing stars for each line
+	 * print a newline character after each line
 	 * 
 	 */
 	

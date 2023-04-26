@@ -14,6 +14,12 @@ public class RightPascalTriangle
 	/*
 	 * Pseudocode:
 	 * 
+	 * Print the upper half of the diamond
+	 * Print asterisks
+	 * Move to next line
+	 * Print the lower half of the diamond
+	 * Print asterisks
+	 * Move to next line
 	 * 
 	 */
 	

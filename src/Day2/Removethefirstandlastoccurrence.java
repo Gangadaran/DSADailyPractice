@@ -10,6 +10,14 @@ public class Removethefirstandlastoccurrence {
 		RemoveOccurrence(nums, noToRemove);
       
 	}
+	
+	/*Pseudocode:
+	 * Create a new array with two less elements than nums
+	 * Loop through each element in nums
+	 * If the element is not equal to noToRemove, add it to the new array
+	 * Loop through each element in the new array and print it
+	 * return temp;
+	 */
 
 	private int[] RemoveOccurrence(int[] nums, int noToRemove) {
 		int[] temp = new int[nums.length-2];
