@@ -9,6 +9,7 @@ public class Contains {
 		int noToFind = 3;
 		
 		aNumberToFind(nums, noToFind);
+		System.out.println(aNumberToFind(nums, noToFind));
 
 	}
 	@Test // Edge
@@ -28,13 +29,13 @@ public class Contains {
 
 	}
 
-	private void aNumberToFind(int[] nums, int noToFind) {
+	private boolean aNumberToFind(int[] nums, int noToFind) {
 		for (int i = 0; i < nums.length-1; i++) {
 			if(nums[i]== noToFind) {
-				System.out.println(nums[i]);
+				return true;
 			}
 		}
-		
+		return false;
 	}
 
 }

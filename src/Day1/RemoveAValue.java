@@ -10,6 +10,7 @@ public class RemoveAValue {
 		int[] nums= {1,2,4};
 		int removeIndex = 2;
 		removeValue(nums, removeIndex);
+		
 
 
 	}

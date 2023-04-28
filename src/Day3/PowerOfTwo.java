@@ -5,7 +5,7 @@ import org.junit.Test;
 public class PowerOfTwo {
     @Test // Positive
 	public void example() {
-		int num = 1000;
+		int num = 6;
       System.out.println(powerOfTwo(num));
 	}
     
@@ -29,6 +29,9 @@ public class PowerOfTwo {
 			 return true;
 		 }
 		return false;
+		
+		 
+		
 	}
 	
 }

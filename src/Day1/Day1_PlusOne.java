@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-public class PlusOne {
+public class Day1_PlusOne {
 	/*
 	 * You are given a large integer represented as an integer array digits, 
 	 * where each digits[i] is the ith digit of the integer. 
