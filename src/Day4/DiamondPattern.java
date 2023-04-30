@@ -4,6 +4,7 @@ import org.junit.Test;
 
 
 
+
 /*  For the firstDiamond
  *  Print spaces before the asterisks
  *  Print asterisks
