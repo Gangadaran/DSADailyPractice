@@ -1,4 +1,4 @@
-package Day2;
+package week1.day2;
 
 import org.junit.Test;
 
@@ -24,29 +24,15 @@ public class AddDigits {
      */
 
 	private int addDigits(int digits) {
-		if (digits < 10) {
+		if(digits==0) {
 			return digits;
 		}
-
-		int sumDigits = 0;
-		int rem = 0;
-		int quo = 0;
-
-		while (digits > 9) {
-			rem = digits % 10;
-			quo = digits / 10;
-			sumDigits = rem + quo;
-			digits = sumDigits;
-		}
-		return sumDigits;
+		if (digits % 9 == 0) {
+	        return 9;
+	    }
+		
+		return digits%9;
 	}
-	public int some(int sum) {
-		int ans = addDigits(sum);
-		while (ans > 9) {
-			ans = addDigits(ans);
-		}
-
-		return ans;
-	}
+	
 	
 }
