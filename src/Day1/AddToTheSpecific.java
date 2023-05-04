@@ -4,7 +4,7 @@ import org.junit.Test;
 
 
 
-public class Day1_AddToTheSpecific {
+public class AddToTheSpecific {
 	@Test // Positive
 	public void example1() {
 		int[] nums= {1,2,4};

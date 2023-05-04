@@ -11,39 +11,66 @@ public class ReversePrefixofWord {
 	public void example() {
 		String word = "abcdefd";
 		char ch = 'd';
-       reverseString(word,ch);
+       System.out.println(reverseString(word,ch));
        
 	}
+	
+	/* pseudo code;
+	 * 1) Find the index of the first occurrence of the character ch
+	 * 2) Character ch does not exist in word, return the original string
+	 * 3) Reverse the substring from index 0 to chIndex (inclusive)
+	 * 4) Append the rest of the string
+	 * 
+	 */
+	
+	
+    
+	
+	//using inbuild methods
+	public String reverseString(String word, char ch) {
 
-	public void reverseString(String word, char ch) {
-		
-			
-		int target = 0;
-		for (int i = 0; i < word.length(); i++) {
-			if(word.charAt(i)==ch) {
-				target = i;
-				
-				break;
-			}
+		int chIndex = word.indexOf(ch);
+
+		if (chIndex == -1) {
+
+			return word;
 		}
-		
-		System.out.println(reverse(word, target));
-		
-		
+
+		StringBuilder sb = new StringBuilder(word.substring(0, chIndex + 1));
+		sb.reverse();
+
+		sb.append(word.substring(chIndex + 1));
+
+		return sb.toString();
 	}
 	
-	public static String reverse(String word, int k) {
-		char[] arr = word.toCharArray();
-		char[] temp = new char[word.length()]; 
-		for (int i = 0; i <=k; i++) {
-			temp[i] = arr[i];
-		}
-		for (int i = k+1; i < word.length(); i++) {
-			temp[i]=arr[i];
-		}
-		
-		StringBuilder sb = new StringBuilder(new String(temp));
-		return sb.reverse().toString();
+	// Not using inbuild methods
+	public static String reversePrefix(String word, char ch) {
+	    int chIndex = -1;
+	    for (int i = 0; i < word.length(); i++) {
+	        if (word.charAt(i) == ch) {
+	            chIndex = i;
+	            break;
+	        }
+	    }
+	    
+	    if (chIndex == -1) {
+	        return word;
+	    }
+	    
+	    char[] chars = word.toCharArray();
+	    int i = 0, j = chIndex;
+	    while (i < j) {
+	        char temp = chars[i];
+	        chars[i] = chars[j];
+	        chars[j] = temp;
+	        i++;
+	        j--;
+	    }
+	    
+	    return new String(chars);
 	}
+
+
 
 }
