@@ -13,9 +13,6 @@ public class MaximumNumber {
 	
 }
 
-	private int findTheMaximumNumber(int num) {
-	
-	}
 	
 	
 	// Using String

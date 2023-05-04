@@ -11,11 +11,48 @@ public class ExcelSheetColumnTitle {
 	
 	@Test
 	public void example() {
-		int columnNumber = 1000;
+		int columnNumber = 28;
 		System.out.println(convertToTitle(columnNumber));
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	private String convertToTitle(int columnNumber) {
+		String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		StringBuilder sb = new StringBuilder();
+		while (columnNumber > 0) {
+			
+			int remainter = (columnNumber -1) % 26; // 1 
+			sb.append(alpha.charAt(remainter)); //b
+			columnNumber = (columnNumber -1) / 26;
+		         
+		}
+		
+		return sb.reverse().toString();
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	private String convertToTitle1(int columnNumber) {
 		StringBuilder title = new StringBuilder();
 	  
 	    while (columnNumber > 0) {
@@ -29,11 +66,7 @@ public class ExcelSheetColumnTitle {
 		
 	}
 	
-	private void convertToTitle1() {
-		StringBuilder sb = new StringBuilder();
-		
-
-	}
+	
 	
 	
 	
