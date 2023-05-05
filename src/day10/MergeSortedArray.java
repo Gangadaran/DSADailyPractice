@@ -18,18 +18,20 @@ public class MergeSortedArray {
 
 
 	private void mergeArray(int[] nums1, int m, int[] nums2, int n) {
-	    int[] temp = new int[m];
-	    int[] temp1 = new int[n];
-		for (int i = 0; i < m; i++) {
-		  temp[i] = nums1[i];
-	}
-		for (int i = 0; i < n; i++, m++) {
-			temp1[i]=nums2[i];
-			
-		}
+	int i = m-1;
+	int j = n-1;
+	int k = nums1.length-1;
 		
-		for(int k:temp) {
-			System.out.println(k);
+		while(j >=0) {
+		  if(i >= 0 && nums1[i] > nums2[j]) {
+			  nums1[k] = nums1[i]; 
+			  i--;
+			  k--;
+		  } else {
+			  nums1[k] = nums2[j];
+			  j--;
+			  k--;
+		  }
 		}
 	
 }
