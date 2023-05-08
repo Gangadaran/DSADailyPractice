@@ -15,7 +15,7 @@ public class DIStringMatch {
 
 	}
 
-	private void stringMatch(String s) {
+	private int[] stringMatch(String s) {
 		int[] temp = new int[s.length()+1];
 		int start =0;
 		int end = s.length();
@@ -26,7 +26,8 @@ public class DIStringMatch {
 				temp[i] = end--;
 			}
 		}
-		
+		temp[s.length()] = start;
+		return temp;
 	}
 	
 	
