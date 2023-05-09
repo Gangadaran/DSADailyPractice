@@ -10,15 +10,15 @@ public class MinimumRecolorstoGetKConsecutiveBlack {
 	 * https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/
 	 */
 	
-//	@Test
-//	public void example() {
-//		String blocks = "WBBWWBBWBW";
-//		int k =7;
-//		System.out.println(recolorsToGetK(blocks, k));
-//		
-//		
-//
-//	}
+	@Test
+	public void example() {
+		String blocks = "WBBWWBBWBW";
+		int k =7;
+		System.out.println(recolorsToGetK(blocks, k));
+		
+		
+
+	}
 	@Test
 	public void example1() {
 		String blocks = "WBWBBBW";
