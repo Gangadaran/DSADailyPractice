@@ -38,6 +38,7 @@ public class MinimumDifferenceBetweenHighestandLowestofKScores {
 	 	return min;
 	}
 	
+	//brute force
 	public int minimumDifference1(int[] arr, int k) {
 	    Arrays.sort(arr);
 	    int n = arr.length;
