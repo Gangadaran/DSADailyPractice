@@ -1,7 +1,7 @@
 package day8_03_05_23;
 
 import java.util.HashMap;
-
+import java.util.Iterator;
 import java.util.Map;
 
 public class RomanToInteger {
@@ -22,25 +22,15 @@ public class RomanToInteger {
 		map.put('M', 1000);
 		
 		int total = 0;
+		
 		for (int i = 0; i < s.length(); i++) {
-			if(s.charAt(i)=='I') {
-				total +=map.get('I');
-			} else if(s.charAt(i)=='V') {
-				total +=map.get('V');
-			} else if(s.charAt(i)=='X') {
-				total += map.get('X');
-			}else if(s.charAt(i)=='L') {
-				total += map.get('L');
-			}else if(s.charAt(i)=='C') {
-				total += map.get('C');
-			}else if(s.charAt(i)=='D') {
-				total += map.get('D');
-			}else if(s.charAt(i)=='M') {
-				total += map.get('M');
+			int currentValue = s.charAt(i);
+			if (currentValue ) {
+				
 			}
+					
 		}
 		
-		System.out.println(total);
 		
 	}
 	

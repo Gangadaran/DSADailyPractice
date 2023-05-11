@@ -19,7 +19,7 @@ public class MajorityElement {
 		System.out.println(findMajority(nums));
 
 	}
-
+   // Using HashMap
 	private int findMajority(int[] nums) {
 		Map<Integer, Integer> map = new HashMap<>();
 		int majorityElement =0;
@@ -43,8 +43,8 @@ public class MajorityElement {
 
 	// Using brute force
 	private int findMajority1(int[] nums) {
-		int majorityCount = nums.length / 2;
-        
+		int majorityCount = nums.length / 2;  // 2
+        // int[] nums = {2,2,1,1,1};
 	    for (int num : nums) {
 	        int count = 0;
 	        for (int i = 0; i < nums.length; i++) {
@@ -64,6 +64,34 @@ public class MajorityElement {
 
 	}
 
-	
+	public static void main(String[] args) {
+		int[] nums = {1,2,3,4,5,6};
+		for(int num:nums) {
+			System.out.println(num);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 }
