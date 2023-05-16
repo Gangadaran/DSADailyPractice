@@ -25,13 +25,13 @@ public class MergeTwoSortedLists {
 		while(i <= list1.length -1) {
 			
 			if (list1[i] == list2[j]) {
-				list.insertFirst(list1[i]);
-				list.insertFirst(list2[j]);
+				list.insertLast(list1[i]);
+				list.insertLast(list2[j]);
 				i++;
 				j++;
 			}else if(list1[i] < list2[j]){
-				list.insertFirst(list1[i]);
-				list.insertFirst(list2[j]);
+				list.insertLast(list1[i]);
+				list.insertLast(list2[j]);
 				i++;
 				j++;
 			}
