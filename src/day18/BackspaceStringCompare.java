@@ -14,7 +14,13 @@ public class BackspaceStringCompare {
 
 	
 	private void backSpace(String s, String t) {
-		
+		char[] array = s.toCharArray();
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < array.length; i++) {
+			if (array[i]!='#') {
+				sb.append(array[i]);
+			}
+		}
 		
 	}
 	

@@ -127,7 +127,7 @@ public class LearnLinkedList {
 	public void display() {
 		Node temp = head;  // here we're just pointing temp variable to head.
 		while(temp != null) {
-			System.out.print("["+ temp.value+ "]");
+			System.out.print( temp.value+ ",");
 			temp = temp.next;
 		}
 		
