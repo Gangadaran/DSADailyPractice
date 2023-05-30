@@ -1,4 +1,4 @@
-package day8_03_05_23;
+package day8;
 
 import java.util.HashMap;
 import java.util.Iterator;
