@@ -1,4 +1,4 @@
-package practiceSums;
+package twoPointerSumWithDifferentApproaches;
 
 import java.util.Arrays;
 
