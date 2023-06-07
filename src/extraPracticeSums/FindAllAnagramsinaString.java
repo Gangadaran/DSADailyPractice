@@ -1,4 +1,4 @@
-package pendingSums;
+package extraPracticeSums;
 
 import java.util.ArrayList;
 import java.util.List;

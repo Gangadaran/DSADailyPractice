@@ -1,4 +1,4 @@
-package pendingSums;
+package extraPracticeSums;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package pendingSums;
+package extraPracticeSums;
 
 public class DefanginganIPAddress {
 	/*

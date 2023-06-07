@@ -1,4 +1,4 @@
-package pendingSums;
+package extraPracticeSums;
 
 import org.junit.Test;
 
