@@ -9,7 +9,7 @@ public class FindLuckyIntegerinanArray {
 	 * 1394. Find Lucky Integer in an Array
 	 * https://leetcode.com/problems/find-lucky-integer-in-an-array/
 	 */
-	@Test
+	@Test 
 	public void example() {
 		int[] nums = {2,2,3,4};
 		System.out.println(findLuckyInteger(nums));
