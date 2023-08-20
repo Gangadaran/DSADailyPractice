@@ -1,6 +1,8 @@
 package day10;
 
 
+ 
+
 import org.junit.Test;
 
 public class FindLuckyIntegerinanArray {
@@ -9,6 +11,8 @@ public class FindLuckyIntegerinanArray {
 	 * 1394. Find Lucky Integer in an Array
 	 * https://leetcode.com/problems/find-lucky-integer-in-an-array/
 	 */
+	
+	
 	@Test 
 	public void example() {
 		int[] nums = {2,2,3,4};

@@ -16,9 +16,31 @@ public class FindCommonCharacters {
 	 */
 	@Test
 	public void example() {
-	String[] words = {"bella","label","roller"};
-	System.out.println(find(words));
+	String[] words = {"bella","label","roller"}; // b=1, e=1, l=1, l=1, a=1;   // l=1, a=1, b=1, e=1, l=1;
+	System.out.println(find1(words));
 
+	}
+
+	private List<String> find1(String[] words) {
+		int[] temp = new int[26];
+		for(int i=0; i < words.length; i++) {
+			for(char c: words[i].toCharArray()) 
+			{
+				temp[c-'a']++;
+			}
+		}
+		String name ="abcdefghijklmnopqrstuvwxyz";
+		List<String> list = new ArrayList<String>();
+		for(int i=0; i < name.length(); i++) {
+			if(temp[i]==3 ) {
+				list.add(String.valueOf(name.charAt(i)));
+			}else if(temp[i]==6) {
+				list.add(String.valueOf(name.charAt(i)));
+				list.add(String.valueOf(name.charAt(i)));
+			}
+		}
+		
+		return list;
 	}
 
 	private List<String> find(String[] words) {
@@ -39,7 +61,7 @@ public class FindCommonCharacters {
 			for (char key : map.keySet()) {
 				int cC=mab.get(key);
 				int minC = Math.min(cC, map.get(key));
-				map.put(key, minC);
+				map.put(key, minC);    // b=1, e=1, l=1, l=1, a=1 
 			}
 			
 		}
